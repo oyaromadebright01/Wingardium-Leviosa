@@ -21,6 +21,25 @@ public class Main {
         animals.remove(1);
         System.out.println("Printing array after removing an element");
         System.out.println(animals);
+
+        System.out.println("lambda functions");
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(30);
+        numbers.add(22);
+        numbers.add(13);
+        numbers.forEach((number) -> {
+            System.out.println(number);
+        });
+        numbers.forEach((number) -> {
+            if (number % 2 == 0) {
+                System.out.println(number + " is even");
+            } else {
+                System.out.println(number + " is odd");
+            }
+        });
+        
+
     }
     
 }
